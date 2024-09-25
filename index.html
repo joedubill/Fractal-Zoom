@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Fractal Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        #fractal-container {
+            position: relative;
+        }
+        canvas {
+            display: block;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            cursor: crosshair;
+        }
+        #controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        button, select {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover, select:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        select {
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="fractal-container">
+        <canvas id="fractal"></canvas>
+        <div id="controls">
+            <select id="fractal-type">
+                <option value="mandelbrot">Mandelbrot Set</option>
+                <option value="julia">Julia Set</option>
+                <option value="burningship">Burning Ship</option>
+                <option value="mandelbox">Mandelbox</option>
+            </select>
+            <button id="zoom-out">Zoom Out</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
