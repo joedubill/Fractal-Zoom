@@ -5,4 +5,4 @@ Zoom takes time to render, so be patient.
 
 Reset button renders at the original zoom.
 
-Deployed with Heroku Static PHP wrapped Buildpack at https://fractalzoom-cd960970da49.herokuapp.com/
+Deployed with Heroku at https://fractalzoom-cd960970da49.herokuapp.com/
